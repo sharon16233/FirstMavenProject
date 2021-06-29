@@ -6,15 +6,19 @@ import Utils.*;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
 public class SampleTest extends Utils {
 
+    @DisplayName("Sharon")
     @Test
     public void test01() throws InterruptedException {
         clickOnElement(AllPages.mainPage.elementsButton);
         waitForElement(Constants.THREE_SECONDS);
     }
+
+
 
 }
