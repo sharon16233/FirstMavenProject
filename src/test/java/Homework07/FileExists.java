@@ -26,14 +26,17 @@ public class FileExists extends Utils {
     }
 
     @Test
-    public void fileExistsTest() throws InterruptedException {
+    public void downloadFile() throws InterruptedException {
         driver.get(baseUrl);
         scrollDown();
         findElements();
         waitForElement(downloadLink);
         clickOnElement(downloadLink);
         Thread.sleep(5000);
+    }
 
+    @Test
+    public void fileExistsTest() {
         Assert.assertTrue(checkIfFileExists(path));
     }
 

@@ -12,9 +12,11 @@ public class Honda extends Utils {
 
     /*Page elements*/
     public static WebElement hondaRadioButton;
+    public static WebElement benzRadioButton;
 
     public static void findElements() {
         hondaRadioButton = driver.findElement(By.id("hondaradio"));
+        benzRadioButton = driver.findElement(By.id("benzradio"));
     }
 
     @Test
@@ -22,7 +24,9 @@ public class Honda extends Utils {
         driver.get(baseUrl);
         findElements();
         clickOnElement(hondaRadioButton);
-
         Assert.assertTrue(hondaRadioButton.isSelected());
+
+        clickOnElement(benzRadioButton);
+        Assert.assertTrue(!hondaRadioButton.isSelected());
     }
 }
