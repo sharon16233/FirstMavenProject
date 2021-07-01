@@ -21,6 +21,7 @@ public class Utils {
         System.setProperty(WEB_DRIVER, CHROME_DRIVER_LOCATION);
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
+        //options.addArguments("--headless");
         driver = new ChromeDriver(options);
     }
 
