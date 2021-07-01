@@ -27,6 +27,6 @@ public class Honda extends Utils {
         Assert.assertTrue(hondaRadioButton.isSelected());
 
         clickOnElement(benzRadioButton);
-        Assert.assertTrue(!hondaRadioButton.isSelected());
+        Assert.assertFalse(hondaRadioButton.isSelected());
     }
 }

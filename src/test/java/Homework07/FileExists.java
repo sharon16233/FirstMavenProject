@@ -4,10 +4,7 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import javax.rmi.CORBA.Util;
 import java.io.File;
-import java.util.concurrent.TimeUnit;
 
 public class FileExists extends Utils {
 
@@ -32,6 +29,8 @@ public class FileExists extends Utils {
         findElements();
         waitForElement(downloadLink);
         clickOnElement(downloadLink);
+
+        //Wait until file is downloaded to the computer.
         Thread.sleep(5000);
     }
 

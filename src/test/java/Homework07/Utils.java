@@ -10,8 +10,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
-
 public class Utils {
 
     public static final String WEB_DRIVER = "webdriver.chrome.driver";
@@ -41,7 +39,7 @@ public class Utils {
     }
 
     public static void waitForElement(WebElement element) {
-        WebDriverWait wait = new WebDriverWait(driver,5);
+        WebDriverWait wait = new WebDriverWait(driver,15);
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
