@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: Tests.SampleTest
+Test set: Homework07.DemoQA
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.313 s - in Tests.SampleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.935 s - in Homework07.DemoQA
